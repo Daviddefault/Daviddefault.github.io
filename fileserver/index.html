@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>David JY Video Server</title>
+</head>
+<body>
+   <video poster=”/path/to/poster.jpg” id=”player” playsinline controls>
+    <source src="/path/to/video.mp4" type="video/mp4">
+    <source src=”/path/to/video.webm” type=”video/webm”>
+    
+    <track kind=”captions” label=”English captions” src=”/path/to/captions.vtt” srclang=”en” default>
+   </video>
+   <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/demo.css" />
+   <script src="https://cdn.plyr.io/3.7.2/demo.js" crossorigin="anonymous"></script>
+</body>
+</html>
