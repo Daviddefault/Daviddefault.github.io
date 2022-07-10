@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[1384],{5242:function(a){a.exports=JSON.parse('{"label":"Diagrama","permalink":"/docs/tags/diagrama","allTagsPath":"/docs/tags","count":1,"items":[{"id":"diagrama","title":"Diagrama","description":"Resumen de todos los dispositivos en la red local.","permalink":"/docs/diagrama"}]}')}}]);
