@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="es" >
 <head>
   <meta charset="UTF-8">
   <title>David JY | Inicio</title>
@@ -20,8 +20,8 @@
       <nav>
         <ul>
           <li><a class="smoothscroll" href="#header">Inicio</a></li>
-          <li><a class="smoothscroll" href="#about">Portfolio</a></li>
-          <li><a class="smoothscroll" href="#skills">Servicios</a></li>
+          <li><a class="" href="https://github.com/Daviddefault">Portfolio</a></li>
+          <li><a class="smoothscroll" href="#about">Servicios</a></li>
           <li><a class="smoothscroll" href="#portfolio">Work</a></li>
           <li><a class="smoothscroll" href="#contact">Contacto</a></li>
         </ul>
@@ -103,20 +103,20 @@
   <div class="container">
     <h1>Contacto</h1>
     <div class="block"></div>
-    <form>
+    <form onsubmit="sendEmail(); reset(); return false;">
       <div class="row">
         <div class="six columns">
           <label for="exampleRecipientInput">Nombre</label>
-          <input class="u-full-width" type="text">
+          <input class="u-full-width" id="name" type="text">
         </div>
         <div class="six columns">
           <label for="exampleEmailInput">Email</label>
-          <input class="u-full-width" type="email">
+          <input class="u-full-width" id="email" type="email">
         </div>
       </div>
       <div class="row">
         <label for="exampleMessage">Mensaje</label>
-        <textarea class="u-full-width"></textarea>
+        <textarea id="message" class="u-full-width"></textarea>
         <input class="button-primary" type="submit" value="Enviar">
       </div>
     </form>
@@ -138,5 +138,22 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script><script  src="./script.js"></script>
 
+
+<!-- FORM SCRIPT -->
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+      function sendEmail(){
+        Email.send({
+          SecureToken : "ab622946-c880-4758-b292-69f140200113",
+        To : 'davidjy21@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "Web Contact Form", 
+        Body : "Name: " + document.getElementById("name").value
+          + "<br> Email: " + document.getElementById("email").value + "<br> Message: " + document.getElementById("message").value,
+    }).then(
+      message => alert("Mensaje enviado correctamente")
+    );
+  }
+</script>
 </body>
 </html>
