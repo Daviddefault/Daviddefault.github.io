@@ -1,19 +1,12 @@
 {
-    "minimumVersion": 1,
-    "packages": [
-        {
-            "name": "Light Modpack",
-            "title": "Light Modpack",
-            "version": "20100223",
-            "location": "lightpack.json",
-            "priority": 1
-        },
-        {
-            "name": "Monster Modpack",
-            "title": "Monster Modpack",
-            "version": "20100223",
-            "location": "monsterpack.json",
-            "priority": 1
-        }
-    ]
+  "minimumVersion" : 1,
+  "packages" : [
+    {
+      "title" : "David's Server Modpack",
+      "name" : "DavidServer",
+      "version" : "1",
+      "location" : "davidserver.json",
+      "priority" : 0
+    }
+  ]
 }
