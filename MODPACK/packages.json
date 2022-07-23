@@ -2,10 +2,10 @@
   "minimumVersion" : 1,
   "packages" : [
     {
-      "title" : "David's Server Modpack",
-      "name" : "DavidServer",
-      "version" : "1",
-      "location" : "davidserver.json",
+      "title" : "David Modpack",
+      "name" : "David Modpack",
+      "version" : "2",
+      "location" : "david-modpack.json",
       "priority" : 0
     }
   ]
